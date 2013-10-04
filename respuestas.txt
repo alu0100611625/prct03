@@ -1,0 +1,39 @@
+18. Imprime la Respuesta entre comillas.
+
+21. Las comillas simples no interpreta valores interiores, para ello necesita de comillas dobles.
+
+22. Usar %q equivale a usar comillas simples, por lo que el texto que aparezca entre llaves se muestra literalmente, mientras que con %Q, interpreta el codigo en su interior.
+
+	2.0.0p247 :001 > a = %q{helo world\n}
+	 => "helo world\\n" 
+	2.0.0p247 :002 > b=%Q{Hello World\n}
+	 => "Hello World\n" 
+	2.0.0p247 :003 > puts a
+	helo world\n
+	 => nil 
+	2.0.0p247 :004 > puts b
+	Hello World
+	 => nil 
+24. En c queda reflejado el contenido de la rutina HERE,  interpretandolo.
+	=> "--4--\n--2--\n" 
+
+25. En c queda reflejado el contenido de la rutina HERE, sin interpretar.
+	=> "--\#{a}--\n--\#{b}--\n"
+
+26. El valor de las siguientes expresiones:
+	s[0,2]  => "he"
+	s[-1,1] => "o"
+	s[0,10] => "hello"
+27. En g queda el resultado de concatenar "hello" con " world"
+
+28. Es el resultado de realizar un bucle de tres iteraciones con el valor '.'
+
+ 	=> "..." 
+
+29.  Escribe el valor entrecomillado, interpretado, tres veces.
+	 => "2 2 2 " 
+
+
+
+
+
